@@ -1,0 +1,30 @@
+{
+  "explorer.fileNesting.enabled": true,
+  "explorer.fileNesting.patterns": {
+    "tsconfig.json": "tsconfig.*.json, env.d.ts, typed-router.d.ts, index.d.ts",
+    "package.json": "package-lock.json, pnpm*, .yarnrc*, yarn*, .eslint*, eslint*, .prettier*, prettier*, .editorconfig, .plasmo*",
+    "tailwind.config.js": "tailwind.config.*, postcss.config.*"
+  },
+
+  "editor.defaultFormatter": "esbenp.prettier-vscode",
+  "editor.formatOnSave": true,
+  "editor.codeActionsOnSave": {
+    "source.fixAll.eslint": "explicit",
+    "source.fixAll.biome": "explicit",
+    "source.organizeImports": "always"
+  },
+
+  "eslint.validate": ["javascript", "javascriptreact", "typescript", "typescriptreact", "vue"],
+
+  "[vue]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+
+  "tailwindCSS.classAttributes": ["class", "className", "class-names", "classNames"],
+  "tailwindCSS.experimental.classRegex": [
+    ["cva\\(([^)]*)\\)", "[\"'`](([^\"'`]*))[\"'`]"],
+    ["cn\\(([^)]*)\\)", "[\"'`](([^\"'`]*))[\"'`]"],
+    ["classNames\\s*=\\s*\\{([^}]*)\\}", "['\"`]([^'\"`]+)['\"`]"],
+    ["class-names\\s*=\\s*\\{([^}]*)\\}", "['\"`]([^'\"`]+)['\"`]"]
+  ]
+}
