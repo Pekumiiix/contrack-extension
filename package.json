@@ -2,7 +2,7 @@
   "name": "contrack-extension",
   "displayName": "Contrack extension",
   "version": "0.0.1",
-  "description": "Scan live websites for contrast issues, review accessibility compliance scores, and apply smarter colors with confidence using the free Contrack Chrome extension.",
+  "description": "Scan live sites for contrast issues, review accessibility scores, and apply smarter colors with the free Contrack Chrome extension.",
   "author": "Pelumi Amao <amaopelumi96@gmail.com>",
   "scripts": {
     "dev": "plasmo dev",
